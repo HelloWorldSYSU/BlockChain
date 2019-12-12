@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.msdictionary.TitleController
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btns"
+        android:orientation="vertical">
+
+        <top.androidman.SuperButton
+            android:id="@+id/ShowCompanys"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:color_normal="@color/color_accent"
+            app:color_pressed="@color/color_ffB419"
+            app:corner="10dp"
+            app:text="查看联盟链企业"
+            app:textColor="@color/color_white"
+            app:textSize="22sp" />
+
+        <top.androidman.SuperButton
+            android:id="@+id/ShowAllTrans"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:color_normal="@color/color_accent"
+            app:color_pressed="@color/color_ffB419"
+            app:corner="10dp"
+            app:text="查看所有交易"
+            app:textColor="@color/color_white"
+            app:textSize="22sp" />
+
+        <top.androidman.SuperButton
+            android:id="@+id/SendTran"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:color_normal="@color/color_accent"
+            app:color_pressed="@color/color_ffB419"
+            app:corner="10dp"
+            app:text="个人企业信息"
+            app:textColor="@color/color_white"
+            app:textSize="22sp" />
+
+        <top.androidman.SuperButton
+            android:id="@+id/SendTrans"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:color_normal="@color/color_accent"
+            app:color_pressed="@color/color_ffB419"
+            app:corner="10dp"
+            app:text="发送交易"
+            app:textColor="@color/color_white"
+            app:textSize="22sp" />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/userInfo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/AccInfo"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/color_red"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/ALLInfo"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/color_red"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/LeftInfo"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/color_red"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/ValueInfo"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/color_red"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/DebtInfo"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/color_red"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Send"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:id="@+id/sendTo"
+            android:background="@drawable/edittext_normal"
+            android:gravity="center"
+            android:hint="输入企业ID:"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:id="@+id/value"
+            android:background="@drawable/edittext_normal"
+            android:gravity="center"
+            android:hint="输入转账额度"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <top.androidman.SuperButton
+            android:id="@+id/SendBtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:color_normal="@color/color_accent"
+            app:color_pressed="@color/color_ffB419"
+            app:corner="10dp"
+            app:text="确认交易"
+            app:textColor="@color/color_white"
+            app:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/error"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/color_red"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

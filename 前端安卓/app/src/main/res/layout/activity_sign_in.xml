@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.example.msdictionary.TitleController
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:id="@+id/msg_layout">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/Account"
+            android:hint="请输入账户ID"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="false"
+            android:background="@drawable/edit_background"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="请输入公钥"
+            android:id="@+id/public_key"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="false"
+            android:background="@drawable/edit_background"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="请输入私钥"
+            android:id="@+id/private_key"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="false"
+            android:background="@drawable/edit_background"/>
+
+        <top.androidman.SuperButton
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/ConfirmSingIn"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:color_normal="@color/color_accent"
+            app:color_pressed="@color/color_ffB419"
+            app:corner="10dp"
+            app:text="登陆"
+            app:textColor="@color/color_white"
+            app:textSize="22sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

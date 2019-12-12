@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.msdictionary.TitleController
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:id="@+id/register_account"
+        android:background="@drawable/edittext_normal"
+        android:gravity="center"
+        android:hint="输入企业ID:"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+    <top.androidman.SuperButton
+        android:id="@+id/RegisterBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:color_normal="@color/color_accent"
+        app:color_pressed="@color/color_ffB419"
+        app:corner="10dp"
+        app:text="确认注册"
+        app:textColor="@color/color_white"
+        app:textSize="22sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:id="@+id/Reminder"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:text="正在生成公钥私钥，请等待..."
+        android:textColor="@color/color_red"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/show_infos"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/RemindPublicKey"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="您的公钥是："
+            android:textColor="@color/color_red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/showPublicKey"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/color_red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/RemindPrivateKey"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="请妥善保管您的私钥："
+            android:textColor="@color/color_red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/showPrivateKey"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/color_red"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
